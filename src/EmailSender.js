@@ -10,7 +10,7 @@ var NodemailerHtmlToText = require('nodemailer-html-to-text').htmlToText;
 
 // If Node.js version < 0.10.xx, we use the `readable-stream` module
 // as a shim for the core `stream` module.
-if (+process.versions.node.split('.').join('') < 1000) {
+if (+process.versions.node.split('.')[1] < 10) {
 	require('readable-stream');
 }
 
