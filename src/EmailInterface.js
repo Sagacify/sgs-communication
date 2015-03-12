@@ -251,7 +251,7 @@ module.exports = (function () {
 				);
 				cb();
 			}]
-		}, function (e, results) {
+		}, function (e) {
 			if(e) {
 				return callback(e);
 			}
